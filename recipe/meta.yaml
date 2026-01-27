@@ -7,7 +7,7 @@ package:
 
 source:
   git_url: https://github.com/robotraconteur-contrib/gz-sim-robotraconteur-plugins.git
-  git_rev: 0f026e9897f5e04f49e331ed0c2390606ae8a185
+  git_rev: c4c0004261f012fc5ab386171ff3fd43f3266d1c
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - librobotraconteur                         # [build_platform != target_platform]
+    - gz-cmake3
   host:
     - librobotraconteur >=1.2.7
     - robotraconteur_companion >=0.4.2
