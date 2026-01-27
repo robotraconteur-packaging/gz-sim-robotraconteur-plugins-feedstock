@@ -1,0 +1,44 @@
+{% set name = "gz-sim-robotraconteur-plugins" %}
+{% set version = "0.1.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  git_url: https://github.com/robotraconteur-contrib/gz-sim-robotraconteur-plugins.git
+  git_rev: 0f026e9897f5e04f49e331ed0c2390606ae8a185
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - git
+    - cmake
+    - ninja
+    - {{ compiler('c') }}
+    - {{ stdlib("c") }}
+    - {{ compiler('cxx') }}
+    - librobotraconteur                         # [build_platform != target_platform]
+  host:
+    - librobotraconteur >=1.2.7
+    - robotraconteur_companion >=0.4.2
+    - libgz-sim
+    - libboost-devel
+    - yaml-cpp
+    - eigen
+    - pkgconfig
+    - libprotobuf
+    - libblas
+    - tinyxml2
+
+about:
+  home: https://github.com/robotraconteur-contrib/gz-sim-robotraconteur-plugins
+  license: Apache-2.0
+  license_file: LICENSE.txt
+  summary: 'Robot Raconteur plugin for the GZ Sim Robot Simulator'
+
+extra:
+  recipe-maintainers:
+    - johnwason

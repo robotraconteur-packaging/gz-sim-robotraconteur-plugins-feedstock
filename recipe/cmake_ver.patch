@@ -1,0 +1,10 @@
+diff --git a/gazebo_robotraconteur_server_plugin/CMakeLists.txt b/gazebo_robotraconteur_server_plugin/CMakeLists.txt
+index 91078c1..5e9ec5a 100644
+--- a/gazebo_robotraconteur_server_plugin/CMakeLists.txt
++++ b/gazebo_robotraconteur_server_plugin/CMakeLists.txt
+@@ -1,4 +1,4 @@
+-cmake_minimum_required(VERSION 3.3 FATAL_ERROR)
++cmake_minimum_required(VERSION 3.8 FATAL_ERROR)
+ project(gazebo_robotraconteur_server_plugin)
+ 
+ set (CMAKE_CXX_STANDARD 11)

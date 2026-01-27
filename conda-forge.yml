@@ -1,0 +1,18 @@
+github:
+  user_or_org: robotraconteur
+
+provider:
+  linux: github_actions
+  osx: github_actions
+  win: github_actions
+  linux_aarch64: github_actions
+  osx_arm64: github_actions
+  linux_ppc64le: None
+
+github_actions:
+  upload_packages: True
+  store_build_artifacts: True
+
+build_platform:
+  linux_aarch64: linux_64
+test: native_and_emulated
