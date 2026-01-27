@@ -1,0 +1,20 @@
+c_compiler:
+- vs2022
+c_stdlib:
+- vs
+channel_sources:
+- robotraconteur,conda-forge
+channel_targets:
+- robotraconteur main
+cxx_compiler:
+- vs2022
+libblas:
+- 3.9.* *netlib
+libboost_devel:
+- '1.88'
+libprotobuf:
+- 6.31.1
+target_platform:
+- win-64
+tinyxml2:
+- '11.0'
