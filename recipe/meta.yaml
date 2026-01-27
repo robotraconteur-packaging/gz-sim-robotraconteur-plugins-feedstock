@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://github.com/robotraconteur-contrib/gz-sim-robotraconteur-plugins.git
-  git_rev: c4c0004261f012fc5ab386171ff3fd43f3266d1c
+  url: https://github.com/robotraconteur-contrib/gz-sim-robotraconteur-plugins/archive/c4c0004261f012fc5ab386171ff3fd43f3266d1c.tar.gz
+  sha256: 066842324099b2a9ee7363713c022016384d44569a8edf702fdd992356f1054c
 
 build:
   number: 0
