@@ -10,7 +10,7 @@ source:
   sha256: 066842324099b2a9ee7363713c022016384d44569a8edf702fdd992356f1054c
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -30,7 +30,6 @@ requirements:
     - yaml-cpp
     - eigen
     - pkgconfig
-    - libprotobuf
     - libblas
     - tinyxml2
 

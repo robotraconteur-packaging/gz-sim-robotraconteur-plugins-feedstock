@@ -12,8 +12,6 @@ libblas:
 - 3.9.* *netlib
 libboost_devel:
 - '1.88'
-libprotobuf:
-- 6.31.1
 target_platform:
 - win-64
 tinyxml2:
