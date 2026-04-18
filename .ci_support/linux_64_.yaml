@@ -19,7 +19,7 @@ docker_image:
 libblas:
 - 3.9.* *netlib
 libboost_devel:
-- '1.88'
+- '1.86'
 libprotobuf:
 - 6.31.1
 target_platform:
