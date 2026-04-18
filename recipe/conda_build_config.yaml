@@ -6,3 +6,5 @@ macos_min_version:             # [osx]
   - 10.15                      # [osx]
 MACOSX_DEPLOYMENT_TARGET:      # [osx]
   - 10.15                      # [osx]
+libboost_devel:
+- '1.88'

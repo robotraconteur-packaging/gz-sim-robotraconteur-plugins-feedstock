@@ -30,7 +30,6 @@ requirements:
     - yaml-cpp
     - eigen
     - pkgconfig
-    - libprotobuf
     - libblas
     - tinyxml2
 
