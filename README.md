@@ -9,11 +9,20 @@ Package license: Apache-2.0
 
 Summary: Robot Raconteur plugin for the GZ Sim Robot Simulator
 
+Development: https://github.com/robotraconteur-contrib/gz-sim-robotraconteur-plugins
+
 Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/robotraconteur/gz-sim-robotraconteur-plugins-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/robotraconteur/gz-sim-robotraconteur-plugins-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
 </table>
 
 Current release info
@@ -33,31 +42,73 @@ conda config --add channels robotraconteur
 conda config --set channel_priority strict
 ```
 
-Once the `robotraconteur` channel has been enabled, `gz-sim-robotraconteur-plugins` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install gz-sim-robotraconteur-plugins
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install gz-sim-robotraconteur-plugins
 ```
 
-It is possible to list all of the versions of `gz-sim-robotraconteur-plugins` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add gz-sim-robotraconteur-plugins
+# for installing globally
+pixi global install gz-sim-robotraconteur-plugins
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `gz-sim-robotraconteur-plugins` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search gz-sim-robotraconteur-plugins --channel robotraconteur
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search gz-sim-robotraconteur-plugins --channel robotraconteur
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search gz-sim-robotraconteur-plugins --channel robotraconteur
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -69,6 +120,8 @@ mamba repoquery whoneeds gz-sim-robotraconteur-plugins --channel robotraconteur
 # List dependencies of `gz-sim-robotraconteur-plugins`:
 mamba repoquery depends gz-sim-robotraconteur-plugins --channel robotraconteur
 ```
+
+</details>
 
 
 

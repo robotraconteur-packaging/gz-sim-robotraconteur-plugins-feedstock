@@ -1,3 +1,4 @@
+conda_build_tool: rattler-build
 github:
   user_or_org: robotraconteur
 
